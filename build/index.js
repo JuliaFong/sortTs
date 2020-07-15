@@ -12,6 +12,8 @@ var Sorter = /** @class */ (function () {
         if (this.collection instanceof Array) {
             for (var i = 0; i < length; i++) {
                 for (var j = 0; j < length - i - 1; j++) {
+                    if (this.collection instanceof LinkedList) {
+                    }
                     // Collection === number []
                     if (this.collection[j] > this.collection[j + 1]) {
                         var leftHand = this.collection[j];
