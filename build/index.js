@@ -2,12 +2,21 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var sorter_1 = require("./sorter");
 // import { NumbersCollection } from './NumbersCollection';
-var CharactersCollection_1 = require("./CharactersCollection");
+// import { CharactersCollection } from './CharactersCollection';
+var LinkedList_1 = require("./LinkedList");
 // const numbersCollection = new NumbersCollection([10, 3, -5, 0, -50, 20])
 // const sorter = new Sorter(numbersCollection)
 // sorter.sort()
 // console.log(sorter.collection)
-var charactersCollection = new CharactersCollection_1.CharactersCollection("xzaWEULAsvbdfsygrdjfha");
-var sorter = new sorter_1.Sorter(charactersCollection);
+// const charactersCollection = new CharactersCollection("xzaWEULAsvbdfsygrdjfha")
+// const sorter = new Sorter(charactersCollection)
+// sorter.sort()
+// console.log(charactersCollection.data)
+var linkedList = new LinkedList_1.LinkedList();
+linkedList.add(500);
+linkedList.add(-10);
+linkedList.add(-3);
+linkedList.add(4);
+var sorter = new sorter_1.Sorter(linkedList);
 sorter.sort();
-console.log(charactersCollection.data);
+linkedList.print();
