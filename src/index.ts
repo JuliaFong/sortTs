@@ -1,9 +1,10 @@
-import { Sorter} from './sorter';
-// import { NumbersCollection } from './NumbersCollection';
+import { Sorter} from './Sorter';
+import { NumbersCollection } from './NumbersCollection';
 // import { CharactersCollection } from './CharactersCollection';
 import { LinkedList } from './LinkedList';
 
-// const numbersCollection = new NumbersCollection([10, 3, -5, 0, -50, 20])
+const numbersCollection = new NumbersCollection([10, 3, -5, 0, -50, 20])
+numbersCollection.sort()
 // const sorter = new Sorter(numbersCollection)
 // sorter.sort()
 // console.log(sorter.collection)
