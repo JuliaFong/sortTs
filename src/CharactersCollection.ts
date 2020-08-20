@@ -1,4 +1,4 @@
-
+import { Sorter } from './Sorter'
 export class CharactersCollection {
     constructor(public data: string) {}
 
