@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var sorter_1 = require("./sorter");
+// import { NumbersCollection } from './NumbersCollection';
 var CharactersCollection_1 = require("./CharactersCollection");
 // const numbersCollection = new NumbersCollection([10, 3, -5, 0, -50, 20])
 // const sorter = new Sorter(numbersCollection)

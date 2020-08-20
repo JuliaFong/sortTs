@@ -7,7 +7,7 @@
 export class LinkedList {
     head: Node | null = null
 
-    add(data: number): void {
+    add(data: number): void { 
         const node = new Node(data)
 
         if (!this.head) {
@@ -37,4 +37,45 @@ export class LinkedList {
 
         return length
     }
- }
+    at(index: number): Node {
+        if (!this.head) {
+            throw new Error("Index out of bounds!")
+        }
+
+        let counter = 0
+        let node: Node | null = this.head
+        while (node) {
+            if (counter === index) {
+               return node 
+            }
+            counter++
+            node = node.next
+        }
+        throw new Error("index outta bounds")
+    }
+
+    compare(leftIndex: number, rightIndex: number): boolean {
+        if (!this.head) {
+            throw new Error("empty list")
+        }
+        return this.at(leftIndex).data > this.at(rightIndex).data
+    }
+    swap(leftIndex: number, rightIndex: number): void {
+        const leftNode = this.at(leftIndex)
+        const rightNode = this.at(rightIndex)
+
+        const leftHand = leftNode.data
+        leftNode.data = rightNode.data
+        rightNode.data = leftHand
+    }
+
+    print(): void {
+        if (!this.head) {
+            return
+        }
+        let node: Node | null = this.head
+        while (node) {
+            node = node.next
+        }
+    }
+}
