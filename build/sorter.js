@@ -1,6 +1,15 @@
 "use strict";
+//Interfaces 
+// sets up a contract between different classes
+//use when we have very different objects
+// loose coupling
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Sorter = void 0;
+// interface Sortable {
+//     length: number
+//     compare(leftIndex: number, rightIndex: number): boolean
+//     swap(leftIndex:number, rightIndex: number): void
+// }
 var Sorter = /** @class */ (function () {
     function Sorter() {
     }
@@ -17,3 +26,7 @@ var Sorter = /** @class */ (function () {
     return Sorter;
 }());
 exports.Sorter = Sorter;
+//Inheritance - Abstract classes
+//sets up a contract between different classes
+//use when we are trying to build upn a definition of an object
+//strongly couples classes together
